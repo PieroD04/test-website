@@ -1,0 +1,21 @@
+h1{
+    color: green;
+    font-family: 'Roboto'; 
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header{
+    background-color: lightgreen;
+}
+
+body{
+    margin: 0px; /*sin borde*/
+}
+
+#cactus-logo{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 50px;
+}
