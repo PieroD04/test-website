@@ -1,0 +1,41 @@
+header{
+    background-color: lightgreen;
+}
+
+.logo img{
+    margin: 0px;
+    padding: 0px 10px;
+    border: 0px;
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navmenu li{
+    display: inline;
+}
+
+.navmenu li a{
+    text-decoration: none;
+    color: darkgreen;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.navmenu li a:hover{
+    font-weight:bolder;
+}
+
+@media only screen and (max-width: 600px){
+    .navmenu{
+        padding: 0px;
+    }
+    .navmenu li{
+        display:block;
+    }
+}
