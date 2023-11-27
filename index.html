@@ -7,9 +7,10 @@
     <meta name = "keywords" content = "Website, GitFlow, HTML, CSS, JavaScript">
     <meta name="author" content = "U202210749">
     <title>Website for a GitFlow example</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
     <link rel="stylesheet" href="assets/styles/index_styles.css">
-    <link rel="stylesheet" href="assets/styles/index_header.css">
+    <link rel="stylesheet" href="assets/styles/index_header.css"> 
 </head>
 <body>
     <header>
@@ -17,21 +18,74 @@
             <div class = "logo">
                 <img src="assets/images/logo.png" alt="Logo">
             </div>
-            <ul class = "navmenu">
-                <li>
-                    <a href ="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href = "nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href = "producto.html">Sobre el Producto</a>
-                </li>
-            </ul>
+            <nav class = "navmenu">
+                <ul>
+                    <li><a href ="#inicio">Inicio</a></li>
+                    <li><a href = "#nosotros">Sobre Nosotros</a></li>
+                    <li><a href = "#producto">Sobre el Producto</a></li>
+                    <li><a href = "#descarga">Descarga</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <h1>Bienvenido a mi página</h1>
+        <div id = "inicio">
+            <h1>HELIA INC.</h1>
+            <h2>Alojamientos únicos en todo el mundo para escapar de la rutina</h2>
+            <img src="assets/images/hero-image.PNG">
+        </div>
+        <div id = "nosotros">
+            <h1>Sobre Nosotros</h1>
+            <h2>¿Quienes somos?</h2>
+                <p>Somos una Startup Europea que nace en el año 2010 buscando satisfacer la demanda de
+                    reservaciones de Alojamientos como son Hoteles, Resorts, Villas y Departamentos en toda Europa.</p>
+                <img id="nosotros-startup-img" src="assets/images/startup.png" alt ="startup en entorno de trabajo">
+            <h2>¿A quiénes nos dirigimos?</h2>
+                <div class = "segmentos-objetivo">
+                    <div class = "segmento-huespedes">
+                        <p>Nos dirigimos a huespedes conformado por varones y mujeres entre 35 y 55 años con un poder 
+                            adquisitivo medio que pueden reservar y pagar un alojamiento por adelantado y que tenga 
+                            un dispositivo móvil de 6 pulgadas como mínimo.</p>
+                        <img src="assets/images/huespedes.png" alt ="huesped mujer en habitacion de hotel">
+                    </div>
+                    <div class = "segmento-empresas">
+                        <p>Nos dirigimos también a Hoteles, Resorts, Villas y Departamentos de Europa que deseen usar la aplicación
+                            para alquilar sus habitaciones y otros ambientes que posean.</p>
+                       <img src="assets/images/hotel.png" alt ="parte de piscina en un hotel de playa">
+                    </div>
+                </div>
+        </div>
+        <div id = "producto">
+            <h1>Sobre el Producto</h1>
+                <p>Helia es un mobile App que permite encontrar el Alojamiento Ideal, mostrando toda la información de los
+                alojamientos con precios atractivos y competitivos.</p>
+                <img src="assets/images/aplicativo.png" alt="capturas de funcionalidades del aplicativo">
+            <h2>¿Qué funcionalidades tiene?</h2>
+                <p>Registro, inicio y personzalicación</p>
+                <p>Home y Dashboard</p>
+                <p>Búsqueda o filtrado</p>
+                <p>Detalle de Hotel</p>
+                <p>Reserva de Hotel</p>
+                <p>Gestión de Reservas</p>
+                <p>Características adicionales</p>
+        </div>
+        <div id = "descarga">
+            <h1>Descarga nuestro aplicativo</h1>
+            <div class = "botones-descarga">
+                <div class = "play-store">
+                    <h2>Google Play Store</h2>
+                    <a href="https://play.google.com/store/apps?hl=es_PE&gl=US" target="_blank">
+                        <img src ="assets/images/google-play-badge.png" alt="Icono de descarga para Google Play Store">
+                    </a>
+                </div>
+                <div class = "app-store">
+                    <h2>App Store</h2>
+                    <a href="https://www.apple.com/la/app-store/" target="_blank">
+                        <img src ="assets/images/app-store-badge.png" alt="Icono de descarga para App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 

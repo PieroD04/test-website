@@ -1,5 +1,15 @@
 header{
-    background-color: lightgreen;
+    background-color: #d3e29d;
+}
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo{
+    align-self: center;
 }
 
 .logo img{
@@ -20,8 +30,8 @@ header{
 
 .navmenu li a{
     text-decoration: none;
-    color: darkgreen;
-    font-family: 'Roboto';
+    color: #2d6b22;
+    font-family: 'Jost'; 
     font-weight: lighter;
     font-size: 20px;
     padding: 0px 20px;
