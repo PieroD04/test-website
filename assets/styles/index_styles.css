@@ -1,10 +1,83 @@
 h1{
-    color: green;
-    font-family: 'Roboto'; 
-    font-size: 50px;
-    font-weight: 600;
+    color: #072a16;
+    font-family: 'Heebo'; 
 }
 
-body{
-    margin: 0px; /*sin borde*/
+h2{
+    font-family: 'Heebo'; 
+    color: #acc864;
+}
+
+p{
+    font-family: 'Jost'; 
+    color: #2d6b22;
+}
+#inicio{
+    text-align: center;
+}
+
+#inicio h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#inicio h2{
+    margin-top: 0px;
+}
+
+#inicio img{
+    width: 50%;
+}
+
+#nosotros{
+    text-align: center;
+}
+#nosotros-startup-img{
+    width: 40%;
+}
+.segmentos-objetivo{
+    display:flex;
+    justify-content: space-evenly;
+}
+.segmento-huespedes, .segmento-empresas{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.segmento-huespedes img{
+    width: 60%;
+}
+
+.segmento-empresas img{
+    width: 90%;
+}
+
+#producto{
+    text-align: center;
+}
+#producto img{
+    width: 50%;
+}
+#descarga{
+    text-align: center;
+}
+.botones-descarga{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.botones-descarga img{
+    height: 5rem;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .segmentos-objetivo{
+        flex-wrap: wrap;
+    }
+
+    .botones-descarga{
+        flex-wrap: wrap;
+    }
 }
