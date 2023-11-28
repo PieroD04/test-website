@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--METATAGS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="description" content ="This website uses HTML, CSS and JavaScript for its functionality">
     <meta name = "keywords" content = "Website, GitFlow, HTML, CSS, JavaScript">
     <meta name="author" content = "U202210749">
+    <!--TITULO-->
     <title>Website for a GitFlow example</title>
+    <!--FUENTES DE TEXTO PARA EL DOCUMENTO-->
     <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <!--CSS LINKS-->
     <link rel="stylesheet" href="assets/styles/index_styles.css">
-    <link rel="stylesheet" href="assets/styles/index_header.css"> 
+    <link rel="stylesheet" href="assets/styles/header_styles.css"> 
+    <link rel="stylesheet" href="assets/styles/footer_styles.css"> 
 </head>
 <body>
     <header>
@@ -61,13 +66,81 @@
                 alojamientos con precios atractivos y competitivos.</p>
                 <img src="assets/images/aplicativo.png" alt="capturas de funcionalidades del aplicativo">
             <h2>¿Qué funcionalidades tiene?</h2>
-                <p>Registro, inicio y personzalicación</p>
-                <p>Home y Dashboard</p>
-                <p>Búsqueda o filtrado</p>
-                <p>Detalle de Hotel</p>
-                <p>Reserva de Hotel</p>
-                <p>Gestión de Reservas</p>
-                <p>Características adicionales</p>
+                <div class="acordeon">
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Registro, inicio y personalización</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Registro (sign up) a la aplicación mediante una cuanta Facebook, Google, Apple o mediante
+                            correo electrónico.</p>
+                        <p class ="acordeon-descripcion">Acceso (Sign in) a la aplicación mediante una cuanta Facebook, Google, Apple o mediante
+                            correo electrónico.</p>
+                        <p class ="acordeon-descripcion">Gestión de Profile del usuario registrado en la aplicación.</p>
+                        <p class ="acordeon-descripcion">Reseteo de contraseña mediante el envio de mensaje al celular o correo electrónico.</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Home y Dashboard</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Home de Bienvenida con la visualización de Hoteles recomendados.</p>
+                        <p class ="acordeon-descripcion">Visualización del listado de los últimos hoteles reservados (Recently Booked).</p>
+                        <p class ="acordeon-descripcion">Visualización del listado de los hoteles marcados como favoritos (My Bookmark).</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Búsqueda o filtrado</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Visualización del listado de todos los hoteles recomendados.</p>
+                        <p class ="acordeon-descripcion">Búsqueda de Hotel mediante un texto de búsqueda.</p>
+                        <p class ="acordeon-descripcion">Filtrado de búsqueda por Pais, orden, precio, estrellas, instalaciones y tipo.</p>
+                        <p class ="acordeon-descripcion">Visualización del resultado de la búsqueda de hoteles.</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Detalle de Hotel</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Visualización del detalle, descripción, instalaciones y localización de un hotel.</p>
+                        <p class ="acordeon-descripcion">Visualización de la galeria de fotos de un hotel.</p>
+                        <p class ="acordeon-descripcion">Visualización de la calificación y comentarios de un Hotel.</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Reserva de Hotel</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Reserva de Hotel especificando el Check in, Check out y cantidad de personas.</p>
+                        <p class ="acordeon-descripcion">Selección de diferentes medios de pago como Paypal, Google Pay, Apple Pay, tarjeta de
+                            crédito y débito.</p>
+                        <p class ="acordeon-descripcion">Confirmación de pago de reserva con el detalle de reserva seleccionado.</p>
+                        <p class ="acordeon-descripcion">Generación y descarga del Ticket (Comprobante de pago) de forma automática con el detalle
+                            de reserva.</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Gestión de Reservas</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Visualización del Historial de reservas realizadas en la Aplicación (My Booking).</p>
+                        <p class ="acordeon-descripcion">Cancelación de la reserva de un hotel con devolución incluida.</p>
+                        <p class ="acordeon-descripcion">Selección del medios de pago donde se realizará la devolución del 80%.</p>
+                        <p class ="acordeon-descripcion">Confirmación de la cancelación de la reserva y devolución del 80% del dinero.</p>
+                    </div>
+                    <div class="acordeon-contenido">
+                        <div class ="acordeon-titulo">
+                            <span>Características adicionales</span>
+                            <i class ="acordeon-estado">+</i>
+                        </div>
+                        <p class ="acordeon-descripcion">Pantalla de Bienvenida a la Aplicación.</p>
+                        <p class ="acordeon-descripcion">Notificación para recibir estados de procesos realizados en la aplicación y novedades de
+                            promociones y ofertas.</p>
+                        <p class ="acordeon-descripcion">Calificar y comentar la experiencia de alojarse en un Hotel.</p>
+                    </div>
+                </div>
+                <script src ="assets/scripts/acordeon.js"></script>
         </div>
         <div id = "descarga">
             <h1>Descarga nuestro aplicativo</h1>
@@ -88,7 +161,20 @@
         </div>
     </main>
     <footer>
-
+        <div class = "redes-sociales">
+            <a href="http://www.facebook.com" target="_blank">
+                <img src="assets/images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="http://www.instagram.com" target="_blank">
+                <img src="assets/images/instagram.png" alt="Instagram Icon">
+            </a>
+            <a href="http://www.linkedin.com" target="_blank">
+                <img src="assets/images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="http://www.youtube.com" target="_blank">
+                <img src="assets/images/youtube.png" alt="YouTube Icon">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
