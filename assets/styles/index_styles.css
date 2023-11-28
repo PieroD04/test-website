@@ -32,6 +32,19 @@ p{
 #inicio img{
     width: 50%;
 }
+/*Sección Descarga*/
+#descarga{
+    text-align: center;
+}
+.botones-descarga{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.botones-descarga img{
+    height: 5rem;
+}
+
 /*Sección Sobre Nosotros*/
 #nosotros{
     text-align: center;
@@ -62,30 +75,6 @@ p{
 #producto img{
     width: 50%;
 }
-/*Sección Descarga*/
-#descarga{
-    text-align: center;
-}
-.botones-descarga{
-    display:flex;
-    justify-content: space-evenly;
-}
-
-.botones-descarga img{
-    height: 5rem;
-}
-
-/*Los elementos se colocan en una sola columna si la pantalla es muy pequeña*/
-@media only screen and (max-width: 500px)
-{
-    .segmentos-objetivo{
-        flex-wrap: wrap;
-    }
-
-    .botones-descarga{
-        flex-wrap: wrap;
-    }
-}
 
 /*Acordeon*/
 .acordeon{
@@ -94,7 +83,7 @@ p{
     justify-content: center;
     max-width: 40rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
     background-color: #acc864;
     padding: 5px;
     border-radius: 8px;
@@ -135,4 +124,88 @@ p{
     display: none;
 
     transition: all 0.3s ease;
+}
+/*SECCION CONTACTO*/
+#contacto h1, #contacto h2{
+    text-align: center;
+    margin: 5px;
+}
+
+#contacto form{
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid #acc864;
+    border-radius: 8px;
+    padding: 10px;
+
+    margin-bottom: 10px;
+}
+
+#contacto form label{
+    font-family: 'Jost';
+    font-size: large;
+}
+
+#contacto form input{
+    font-family: 'Jost';
+    padding: 5px 5px;
+    width: 95%;
+    margin-bottom: 5px;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#contacto form textarea{
+    max-width: 95%;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-boton{
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 30%;
+}
+
+.form-boton input{
+    background-color: #C8DA98;
+}
+
+.form-boton input:hover{
+    background-color: #acc864;
+}
+
+#form-advertencia{
+    color: red;
+    font-size: small;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /*Texto invisible hasta que sea necesario*/
+    display: none;
+}
+
+/*Los elementos se colocan en una sola columna si la pantalla es muy pequeña*/
+@media only screen and (max-width: 750px){
+    #contacto form{
+        width: 90%;
+    }
+    .segmento-huespedes, .segmento-empresas{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .segmentos-objetivo{
+        flex-wrap: wrap;
+    }
+
+    .botones-descarga{
+        flex-wrap: wrap;
+    }
 }
