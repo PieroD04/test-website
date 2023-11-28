@@ -1,0 +1,26 @@
+.redes-sociales{
+    display: flex;  
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #d3e29d;
+    height: 40px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales a img{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    filter: invert(25%);
+}
+
+.redes-sociales a img:hover{
+    filter: invert(0%);
+    transform:rotate(360deg);
+    transition-duration: 1s;
+
+}
+
