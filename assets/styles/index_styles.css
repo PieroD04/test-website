@@ -1,3 +1,5 @@
+
+/*Estilos generales de la pagina*/
 h1{
     color: #072a16;
     font-family: 'Heebo'; 
@@ -12,6 +14,7 @@ p{
     font-family: 'Jost'; 
     color: #2d6b22;
 }
+/*Sección Inicio*/
 #inicio{
     text-align: center;
 }
@@ -29,7 +32,7 @@ p{
 #inicio img{
     width: 50%;
 }
-
+/*Sección Sobre Nosotros*/
 #nosotros{
     text-align: center;
 }
@@ -52,13 +55,14 @@ p{
 .segmento-empresas img{
     width: 90%;
 }
-
+/*Sección Sobre el Producto*/
 #producto{
     text-align: center;
 }
 #producto img{
     width: 50%;
 }
+/*Sección Descarga*/
 #descarga{
     text-align: center;
 }
@@ -71,6 +75,7 @@ p{
     height: 5rem;
 }
 
+/*Los elementos se colocan en una sola columna si la pantalla es muy pequeña*/
 @media only screen and (max-width: 500px)
 {
     .segmentos-objetivo{
@@ -80,4 +85,54 @@ p{
     .botones-descarga{
         flex-wrap: wrap;
     }
+}
+
+/*Acordeon*/
+.acordeon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #acc864;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.acordeon-titulo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #acc864;*/
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.acordeon-estado{
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 30px;
+    color:black;
+}
+
+.acordeon-contenido{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #C8DA98;
+    margin: 5px 0px;
+}
+
+.acordeon-descripcion{
+    padding: 0 15px;
+    text-align: left;
+
+    height: 0px;
+    overflow: hidden;
+    display: none;
+
+    transition: all 0.3s ease;
 }
