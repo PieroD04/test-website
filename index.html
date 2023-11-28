@@ -26,9 +26,10 @@
             <nav class = "navmenu">
                 <ul>
                     <li><a href ="#inicio">Inicio</a></li>
+                    <li><a href = "#descarga">Descarga</a></li>
                     <li><a href = "#nosotros">Sobre Nosotros</a></li>
                     <li><a href = "#producto">Sobre el Producto</a></li>
-                    <li><a href = "#descarga">Descarga</a></li>
+                    <li><a href = "#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,6 +39,23 @@
             <h1>HELIA INC.</h1>
             <h2>Alojamientos únicos en todo el mundo para escapar de la rutina</h2>
             <img src="assets/images/hero-image.PNG">
+        </div>
+        <div id = "descarga">
+            <h1>Descarga nuestro aplicativo</h1>
+            <div class = "botones-descarga">
+                <div class = "play-store">
+                    <h2>Google Play Store</h2>
+                    <a href="https://play.google.com/store/apps?hl=es_PE&gl=US" target="_blank">
+                        <img src ="assets/images/google-play-badge.png" alt="Icono de descarga para Google Play Store">
+                    </a>
+                </div>
+                <div class = "app-store">
+                    <h2>App Store</h2>
+                    <a href="https://www.apple.com/la/app-store/" target="_blank">
+                        <img src ="assets/images/app-store-badge.png" alt="Icono de descarga para App Store">
+                    </a>
+                </div>
+            </div>
         </div>
         <div id = "nosotros">
             <h1>Sobre Nosotros</h1>
@@ -142,22 +160,25 @@
                 </div>
                 <script src ="assets/scripts/acordeon.js"></script>
         </div>
-        <div id = "descarga">
-            <h1>Descarga nuestro aplicativo</h1>
-            <div class = "botones-descarga">
-                <div class = "play-store">
-                    <h2>Google Play Store</h2>
-                    <a href="https://play.google.com/store/apps?hl=es_PE&gl=US" target="_blank">
-                        <img src ="assets/images/google-play-badge.png" alt="Icono de descarga para Google Play Store">
-                    </a>
+        <div id="contacto">
+            <h1>CONTÁCTENOS</h1>
+            <h2>¡Siempre atentos a sus consultas!</h2>
+            <form id = "form" method="post" action="">
+                <label for="form-nombres">Nombre(s)</label><br>
+                <input type="text" id="form-nombres" placeholder="Ejemplo: Piero Gonzalo"><br>
+                <label for="form-apellidos">Apellidos</label><br>
+                <input type="text" id="form-apellidos" placeholder="Ejemplo: Delgado Corrales"><br>
+                <label for="form-correo">Correo</label><br>
+                <input type="email" id="form-correo" placeholder="Ejemplo: piero@gmail.com" required><br>
+                <label for="form-mensaje">Mensaje</label><br>
+                <textarea id="form-mensaje" cols="75" rows="9" placeholder="Coloca tu mensaje ya sea una consulta o duda"></textarea><br>
+                <div class = "form-boton">
+                    <label for="boton-enviar"></label>
+                    <input type="submit" id="boton-enviar">
                 </div>
-                <div class = "app-store">
-                    <h2>App Store</h2>
-                    <a href="https://www.apple.com/la/app-store/" target="_blank">
-                        <img src ="assets/images/app-store-badge.png" alt="Icono de descarga para App Store">
-                    </a>
-                </div>
-            </div>
+                <p id = "form-advertencia">Error, correo invalido</p>
+            </form>
+            <script src ="assets/scripts/formulario.js"></script>
         </div>
     </main>
     <footer>

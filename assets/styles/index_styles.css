@@ -1,5 +1,9 @@
 
 /*Estilos generales de la pagina*/
+body{
+    background-image:url("../images/white-background-50%.png");
+}
+
 h1{
     color: #072a16;
     font-family: 'Heebo'; 
@@ -32,6 +36,19 @@ p{
 #inicio img{
     width: 50%;
 }
+/*Sección Descarga*/
+#descarga{
+    text-align: center;
+}
+.botones-descarga{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botones-descarga img{
+    height: 5rem;
+}
+
 /*Sección Sobre Nosotros*/
 #nosotros{
     text-align: center;
@@ -40,12 +57,9 @@ p{
     width: 40%;
 }
 .segmentos-objetivo{
-    display:flex;
-    justify-content: space-evenly;
-}
-.segmento-huespedes, .segmento-empresas{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .segmento-huespedes img{
@@ -53,7 +67,7 @@ p{
 }
 
 .segmento-empresas img{
-    width: 90%;
+    width: 70%;
 }
 /*Sección Sobre el Producto*/
 #producto{
@@ -61,30 +75,6 @@ p{
 }
 #producto img{
     width: 50%;
-}
-/*Sección Descarga*/
-#descarga{
-    text-align: center;
-}
-.botones-descarga{
-    display:flex;
-    justify-content: space-evenly;
-}
-
-.botones-descarga img{
-    height: 5rem;
-}
-
-/*Los elementos se colocan en una sola columna si la pantalla es muy pequeña*/
-@media only screen and (max-width: 500px)
-{
-    .segmentos-objetivo{
-        flex-wrap: wrap;
-    }
-
-    .botones-descarga{
-        flex-wrap: wrap;
-    }
 }
 
 /*Acordeon*/
@@ -94,7 +84,7 @@ p{
     justify-content: center;
     max-width: 40rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
     background-color: #acc864;
     padding: 5px;
     border-radius: 8px;
@@ -135,4 +125,82 @@ p{
     display: none;
 
     transition: all 0.3s ease;
+}
+/*SECCION CONTACTO*/
+#contacto h1, #contacto h2{
+    text-align: center;
+    margin: 5px;
+}
+
+#contacto form{
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid #acc864;
+    border-radius: 8px;
+    padding: 10px;
+
+    margin-bottom: 10px;
+}
+
+#contacto form label{
+    font-family: 'Jost';
+    font-size: large;
+}
+
+#contacto form input{
+    font-family: 'Jost';
+    padding: 5px 5px;
+    width: 95%;
+    margin-bottom: 5px;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#contacto form textarea{
+    max-width: 95%;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-boton{
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 30%;
+}
+
+.form-boton input{
+    background-color: #C8DA98;
+}
+
+.form-boton input:hover{
+    background-color: #acc864;
+}
+
+#form-advertencia{
+    color: red;
+    font-size: small;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /*Texto invisible hasta que sea necesario*/
+    display: none;
+}
+
+/*Los elementos se colocan en una sola columna si la pantalla es mediana/pequeña*/
+@media only screen and (max-width: 750px){
+    #contacto form{
+        width: 90%;
+    }
+
+    .botones-descarga{
+        grid-template-columns: 1fr;
+    }
+
+    .segmentos-objetivo{
+        grid-template-columns: 1fr;
+    }
 }
