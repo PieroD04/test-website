@@ -3,15 +3,6 @@ const apellidos = document.getElementById("form-apellidos");
 const mensaje = document.getElementById("form-mensaje");
 const advertencia = document.getElementById("form-advertencia");
 
-function ValidarCorreo(correo) 
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo.value))
-  {
-    return (true)
-  }
-    return (false)
-}
-
 const form = document.getElementById("form");
 form.addEventListener("submit",e=>{
     e.preventDefault();

@@ -1,5 +1,9 @@
 
 /*Estilos generales de la pagina*/
+body{
+    background-image:url("../images/white-background-50%.png");
+}
+
 h1{
     color: #072a16;
     font-family: 'Heebo'; 
@@ -37,8 +41,8 @@ p{
     text-align: center;
 }
 .botones-descarga{
-    display:flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .botones-descarga img{
@@ -53,12 +57,9 @@ p{
     width: 40%;
 }
 .segmentos-objetivo{
-    display:flex;
-    justify-content: space-evenly;
-}
-.segmento-huespedes, .segmento-empresas{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .segmento-huespedes img{
@@ -66,7 +67,7 @@ p{
 }
 
 .segmento-empresas img{
-    width: 90%;
+    width: 70%;
 }
 /*Sección Sobre el Producto*/
 #producto{
@@ -132,6 +133,7 @@ p{
 }
 
 #contacto form{
+    background-color: white;
     width: 40%;
     margin: 0 auto;
     border: 2px solid #acc864;
@@ -188,24 +190,17 @@ p{
     display: none;
 }
 
-/*Los elementos se colocan en una sola columna si la pantalla es muy pequeña*/
+/*Los elementos se colocan en una sola columna si la pantalla es mediana/pequeña*/
 @media only screen and (max-width: 750px){
     #contacto form{
         width: 90%;
     }
-    .segmento-huespedes, .segmento-empresas{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-@media only screen and (max-width: 500px)
-{
-    .segmentos-objetivo{
-        flex-wrap: wrap;
-    }
 
     .botones-descarga{
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+    }
+
+    .segmentos-objetivo{
+        grid-template-columns: 1fr;
     }
 }
