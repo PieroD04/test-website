@@ -20,6 +20,8 @@ form.addEventListener("submit",e=>{
     }
     else{
         advertencia.style.display = "none";
-        alert("¡Gracias por contactarnos! Te responderemos al correo lo más pronto posible.");
+        var confirmar = confirm("Los datos ingresados cumplen los requisitos. ¿Deseas enviar el mensaje?");
+        if(confirmar) alert("¡Gracias por contactarnos! Te responderemos al correo lo más pronto posible.");
+        form.reset();
     }
 })
